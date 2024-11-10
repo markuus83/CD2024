@@ -273,85 +273,92 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
 
 #### 16.
 ```Shell
-
+16. Crear un fichero _logs.txt con el siguiente contenido:
 
     $ nano _logs.txt
 ```
 
 #### 17.
 ```Shell
-
+17. Crear un fichero _ayuda.txt con el siguiente contenido:
 
     $ nano _ayuda.txt
 ```
 
 #### 18.
 ```Shell
+18. Preparar todo con git add *. Explicad qué pasa:
 
-
-    $
+    $ git add *
 ```
-
 
 #### 19.
 ```Shell
+19: Hacer un commit de los cambios con el mensaje “Añadido capitulo 2”. Comprobar/explicar qué se sube al repositorio:
 
+    $ git commit -m "Añadido capítulo 2"
 
-    $
+    · A diferencia de "git add ." "git add *" no sube los archivos ignorados por el shell, es decir, solamente sube archivos o directorios visibles.
 ```
 
 #### 20.
 ```Shell
+20. Modificar el fichero capitulo2.txt (elimina lo que había antes):
 
+    · Nos posicionamos en el directorio /capitulos
 
-    $
+    $ nano capitulo2.txt
 ```
 
 #### 21.
 ```Shell
-
+21. Ver y explicar qué ha cambiado y aún no has preparado:
 
     $
 ```
 
 #### 22.
 ```Shell
+22. Hacer un commit con el mensaje “Capitulo 2 modificado”:
 
-
-    $
+    $ git add .
+    $ git commit -m “Capitulo 2 modificado"
 ```
 
 #### 23.
 ```Shell
+23. Vuelve a modificar el capitulo con el siguiente contenido:
 
-
-    $
+    $ nano capitulo2.txt
 ```
 
 #### 24.
 ```Shell
+24. Prepara tus cambios y comprueba qué ha cambiado con la última instantánea confirmada:
 
 
-    $
+    $ git add .
+    $ git status
 ```
 
 #### 25.
 ```Shell
+25. Elimina del repositorio el fichero _ayuda.txt:
 
-
-    $
+    $ rm _ayuda.txt
 ```
 
 #### 26.
 ```Shell
+26. Cambia el nombre del fichero indice.txt por indice_libros.txt y sube los cambios:
 
-
-    $
+    $ mv indice.txt indice_libros.txt
 ```
 
-#### 27-
+#### 27.
 ```Shell
+27. Cambia el mensaje del último commit:
 
+    $ git commit --amend -m "Mensaje del commit cambiado"
 
-    $
 ```
