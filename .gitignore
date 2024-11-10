@@ -1,3 +1,6 @@
+#(Este comando no proesentaba el "/" final y por lo que la carpeta no fue ignorada, pùesto que fue escrito después, y git no lo reconoce)
 Ejercicio1/
+
+# Siguiente archivo ignorado
 capitulo3.txt
 
