@@ -264,17 +264,94 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
     $ 
 ```
 
-#### 
+#### 15.
+```Shell
+15. Modificar el fichero para que se ignoren todos aquellos ficheros que comiencen por _ a excepción del fichero _ayuda.txt (ya no se debe ignorar capitulo3.txt):
+
+    · Escribimos "_*" y "!_ayuda.txt"
+```
+
+#### 16.
+```Shell
+
+
+    $ nano _logs.txt
+```
+
+#### 17.
+```Shell
+
+
+    $ nano _ayuda.txt
+```
+
+#### 18.
 ```Shell
 
 
     $
 ```
 
-#### 
+
+#### 19.
 ```Shell
 
 
     $
 ```
 
+#### 20.
+```Shell
+
+
+    $
+```
+
+#### 21.
+```Shell
+
+
+    $
+```
+
+#### 22.
+```Shell
+
+
+    $
+```
+
+#### 23.
+```Shell
+
+
+    $
+```
+
+#### 24.
+```Shell
+
+
+    $
+```
+
+#### 25.
+```Shell
+
+
+    $
+```
+
+#### 26.
+```Shell
+
+
+    $
+```
+
+#### 27-
+```Shell
+
+
+    $
+```
