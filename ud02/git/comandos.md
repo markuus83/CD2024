@@ -418,7 +418,18 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
 
 #### 7.
 ```Shell
-7. 
+7. En la rama master modifica el fichero bibliografía.txt y añade la siguiente línea:
 
-    
+    $ git checkout master
+    $ nano bibliografia.txt
+
+```
+
+#### 8.
+```Shell
+8. Fusiona la rama harrypotter con la rama master. Resuelve el conflicto y comitea los cambios
+
+    $ git checkout master
+    $ nano bibliografia.txt
+
 ```
