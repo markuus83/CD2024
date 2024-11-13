@@ -336,7 +336,6 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
 ```Shell
 24. Prepara tus cambios y comprueba qué ha cambiado con la última instantánea confirmada:
 
-
     $ git add .
     $ git status
 ```
@@ -361,4 +360,65 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
 
     $ git commit --amend -m "Mensaje del commit cambiado"
 
+```
+# Ejercicio 4: RAMAS GIT
+
+#### 1.
+```Shell
+1. Crea una nueva rama bibliografia y muestra las ramas del repositorio:
+
+    $ git branch bibliografia
+    $ git branch
+```
+
+#### 2.
+```Shell
+2. Cambia a la rama bibliografía y crea el fichero bibliografia.txt y añade la siguiente referencia:
+
+    $ git checkout bibliografia
+    $ echo >> "bibliografia.txt" caperucita roja,  Trina Schart Hyman, Charles Perrault
+```
+
+#### 3.
+```Shell
+3. Comitea los cambios con el mensaje “Añadida primera referencia bibliográfica:
+
+    $ git add .
+    $ git commit -m "Añadida primera referencia bibliográfica"
+
+```
+
+#### 4.
+```Shell
+4. Fusiona la rama bibliografía con la rama master y eliminar la rama bibliografía:
+
+    $ git checkout master
+    $ git merge bibliografia
+    $ git branch -d bibliografia
+
+```
+
+#### 5.
+```Shell
+5. Crea la rama harrypotter. En esta rama modifica elfichero bibliografia.txt para que contenga las siguiente referencias:
+
+    $ git branch harrypotter
+    $ git checkout harrypotter
+    $ nano bibliografia.txt
+
+```
+
+#### 6.
+```Shell
+6. Commitea los cambios con el mensaje "Añadida bibliografia de harry potter"
+
+    $ git add .
+    $ git commit -m "Añadida bibliografia de harry potter"
+```
+
+#### 7.
+```Shell
+7. 
+
+    
 ```
