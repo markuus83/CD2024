@@ -1,4 +1,4 @@
-# Ejercicio 1: Repositorio Local
+# Ejercicio 1: REPOSITORIO LOCAL
 
 #### 1.
 ```Shell
@@ -49,7 +49,7 @@
     $ git push origin master
 ```
 
-# Ejercicio 2: Trabajando con repositorios locales.
+# Ejercicio 2: TRABAJANDO CON REPOSITORIOS LOCALES
 
 #### 1.
 ```Shell
@@ -148,7 +148,7 @@
     $ git log
 ```
 
-# Ejercicio 3: Fundamentos de GIT
+# Ejercicio 3: FUNDAMENTOS DE GIT 
 
 #### 1.
 ```Shell
@@ -361,6 +361,8 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
     $ git commit --amend -m "Mensaje del commit cambiado"
 
 ```
+
+
 # Ejercicio 4: RAMAS GIT
 
 #### 1.
@@ -432,4 +434,56 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
     $ git checkout master
     $ nano bibliografia.txt
 
+```
+
+
+# Ejercicio 5: REPOSITORIOS REMOTOS GIT
+
+#### 1.
+```Shell
+1. Crea un repositorio en GitHub con el nombre libro-git. Añadelo como url remota en nuestro repositorio local de libro creado en el ejercicio anterior:
+
+    $ 
+```
+
+#### 2.
+```Shell
+2. Añade todo lo que tenemos del repositorio libro al repositorio remoto y comprueba que los cambios están subidos correctamente: 
+
+    $
+```
+
+#### 3.
+```Shell
+3. Colabora en el repositorio remoto de otro compañero. Clona su repositorio. Añade el fichero autores.txt que contenga tu nombre y tu correo electrónico. Haz un commit y sube los cambios al repositorio remoto de tu compañero:
+
+    $
+```
+
+#### 4.
+```Shell
+4. Cuando un compañero/a haya realizado el paso anterior en tu repositorio remoto, sincroniza tu repositorio en local. El resultado debe ser que en local debes tener ese fichero autores.txt:
+
+    $ 
+```
+
+#### 5.
+```Shell
+5. Modifica ese fichero, cambiando el nombre de tu comapñero/a por el tuyo y añadiendo la fecha y la hora donde lo realizas. Sube los cambios al repositorio remoto:
+
+    $ 
+```
+
+#### 6. 
+```Shell
+6. Al mismo tiempo, avisa a tu compañero/a para que, en su repositorio local, vuelva a modificar el fichero autores.txt añadiendo tu nombre en una línea nueva, la fecha y la hora así como el lugar donde se realiza el ejercicio. Una vez modificado, debe subir los cambios a remoto:
+
+    $
+```
+
+#### 7. 
+```Shell
+7. Resolver los conflictos que se puedan producir en ambos repositorios:
+
+    $
 ```
