@@ -396,7 +396,7 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
 
     $ git checkout master
     $ git merge bibliografia
-    $ git branch -d bibliografia
+    $ git branch -D bibliografia
 
 ```
 
@@ -443,47 +443,74 @@ Como de todas las veces que hicimos git add . no lo hicismo desde la misma carpe
 ```Shell
 1. Crea un repositorio en GitHub con el nombre libro-git. Añadelo como url remota en nuestro repositorio local de libro creado en el ejercicio anterior:
 
-    $ 
+    $ git clone git@github.com:markuus83/Libro-git.git
+
 ```
 
 #### 2.
 ```Shell
 2. Añade todo lo que tenemos del repositorio libro al repositorio remoto y comprueba que los cambios están subidos correctamente: 
 
-    $
+    · Copiamos los contenidos mediante la interfaz gráfica
+    $ git add .
+    $ git commit -m "Creado repositorio"
+    $ git push origin main
+
 ```
 
 #### 3.
 ```Shell
 3. Colabora en el repositorio remoto de otro compañero. Clona su repositorio. Añade el fichero autores.txt que contenga tu nombre y tu correo electrónico. Haz un commit y sube los cambios al repositorio remoto de tu compañero:
 
-    $
+    $ git clone https://github.com/Chris-VD/libro-git.git
 ```
 
 #### 4.
 ```Shell
 4. Cuando un compañero/a haya realizado el paso anterior en tu repositorio remoto, sincroniza tu repositorio en local. El resultado debe ser que en local debes tener ese fichero autores.txt:
 
-    $ 
+    $ git clone
 ```
 
 #### 5.
 ```Shell
-5. Modifica ese fichero, cambiando el nombre de tu comapñero/a por el tuyo y añadiendo la fecha y la hora donde lo realizas. Sube los cambios al repositorio remoto:
+5. Modifica ese fichero, cambiando el nombre de tu compañero/a por el tuyo y añadiendo la fecha y la hora donde lo realizas. Sube los cambios al repositorio remoto:
 
-    $ 
+    $ nano autores.txt 
+    $ git add autores.txt
+    $ git commit -m "Nome Marcos"
+    $ git push origin master
 ```
 
-#### 6. 
-```Shell
-6. Al mismo tiempo, avisa a tu compañero/a para que, en su repositorio local, vuelva a modificar el fichero autores.txt añadiendo tu nombre en una línea nueva, la fecha y la hora así como el lugar donde se realiza el ejercicio. Una vez modificado, debe subir los cambios a remoto:
+# Ejercicio 5: REPOSITORIOS REMOTOS GIT
 
-    $
+#### 1.
+```Shell
+1. Crea una nueva rama llamada autoria y cambiate a ella.
+
+    $ git branch autoria
+
+    $ git checkout autoria
 ```
 
-#### 7. 
+#### 2.
 ```Shell
-7. Resolver los conflictos que se puedan producir en ambos repositorios:
+2. Añadir el nombre del usuario y su correo al fichero autores.txt
 
-    $
+    $ nano autores.txt
+```
+
+#### 3.
+```Shell
+3. Hacer un commit con el mensaje
+
+    $ git add autores.txt
+    $ git commit -m "Rama Remota"
+```
+
+#### 4.
+```Shell
+4. Subir los cambios de la rama autoria al repositorio remoto en GitHub.
+
+    $ git push origin autoria
 ```
