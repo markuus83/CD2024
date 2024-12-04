@@ -6,11 +6,15 @@ public class TestPersona {
         Persona markos;
         Persona outro;
 
-        markos = new Persona();
-        outro = markos;
+        markos = new Persona("Flako", "Fumon");
+        outro = new Persona("Mili", "Etarra");
 
-        markos.nombre = "Flako";
-        markos.correo = "a23marcoscc@iessanclemente.net";
-        markos.toString();
+        /**
+        markos = null;
+
+        outro.nombre = "Flako";
+        outro.correo = "a23marcoscc@iessanclemente.net";
+        */
+        outro.toString();
     }
 }

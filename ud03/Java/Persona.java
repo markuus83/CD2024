@@ -14,5 +14,8 @@ public class Persona{
     Date fecNacemento;
 
     // MÉTODOS
-
+    public Persona(String nom, String apel){
+        nombre = nom;
+        apellido1 = apel;
+    }
 }
