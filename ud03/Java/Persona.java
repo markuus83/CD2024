@@ -5,17 +5,15 @@ import java.util.Date;
 public class Persona{
 
     // ATRIBUTOS
-    String dni;
-    String nombre;
-    String apellido1;
-    String apellido2;
-    String correo;
-    Integer movil;
-    Date fecNacemento;
+    private String dni;
+    public String nombre;
+    public String apellido1;
+    public String apellido2;
+    public String correo;
+    public Integer movil;
+    public Date fecNacemento;
 
     // MÉTODOS
     public Persona(String nom, String apel){
-        nombre = nom;
-        apellido1 = apel;
-    }
+    };
 }
