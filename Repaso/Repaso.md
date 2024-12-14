@@ -45,6 +45,15 @@ Hace falta tener en cuenta, que dentro de todos los archivos java, hay que llama
 
     $ java HolaMundo
     #Observamos como no tenemos que escribir la extensión del archivo '.class' a ejecutar.
+
+
+5. Con la existencia de la entrada por consola, podemos realizar inputs a través de la terminal (ver archivo "Mates1.java" y "Mates2.java")
+
+    $ javac Mates1.java
+
+    $ java Mates1 
+
+    · A partir de aquí, ingresamos los datos por terminal.
 ```
 
 
