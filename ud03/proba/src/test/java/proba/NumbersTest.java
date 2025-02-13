@@ -1,7 +1,6 @@
 package proba;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -24,5 +23,11 @@ public class NumbersTest {
     @ValueSource(ints = {0})
     void isOdd_ShouldReturnFalseForZero(int number){
         assertTrue(!Numbers.isOdd(number));
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {Integer.MIN_VALUE+1})
+    void isOdd_ShouldReturnTrueForMinValuePlusOne(int number){
+        assertTrue(Numbers.isOdd(number));
     }
 }
