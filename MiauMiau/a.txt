@@ -1,0 +1,8 @@
+buffer ola!
+getchar -> o
+buffer la!
+getchar -> l
+buffer a!
+getchar -> a
+buffer !
+getchar -> !
