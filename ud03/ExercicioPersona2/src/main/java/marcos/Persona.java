@@ -1,6 +1,6 @@
 package marcos;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 class Persona {
     
@@ -11,7 +11,7 @@ class Persona {
     private String ape2;
     private String correo;
     private Integer movil;
-    private LocalDate fecNacemento;
+    private Date fecNacemento;
 
     /**
      * Constructor vacío da clase Persona
@@ -31,7 +31,7 @@ class Persona {
      * @param movil -> Movil de la persona
      * @param fecNacemento -> Fecha de nacimiento de la persona
      */
-    public Persona(String dni, String nombre, String ape1, String ape2, String correo, Integer movil, LocalDate fecNacemento) {
+    public Persona(String dni, String nombre, String ape1, String ape2, String correo, Integer movil, Date fecNacemento) {
         this.setDni(dni);
         this.setNombre(nombre);
         this.setApe1(ape1);
@@ -67,8 +67,16 @@ class Persona {
         return ape1 + " " + ape2;
     }
 
+    public String getApe1(){
+        return ape1;
+    }
+
     public void setApe1(String ape1) {
         this.ape1 = ape1;
+    }
+
+    public String getApe2(){
+        return ape2;
     }
 
     public void setApe2(String ape2) {
@@ -91,26 +99,26 @@ class Persona {
         this.movil = movil;
     }
 
-    public LocalDate getFecNacemento() {
+    public Date getFecNacemento() {
         return fecNacemento;
     }
 
-    public void setFecNacemento(LocalDate fecNacemento) {
+    public void setFecNacemento(Date fecNacemento) {
         this.fecNacemento = fecNacemento;
     }
 
     /**
-     * Método toString especial 
+     * Método especial toString  
      */
     @Override
     public String toString() {
         return "Persona {" +
-               "dni='" + getDni() + '\'' +
-               ", nombre='" + getNombre() + '\'' +
-               ", apellidos='" + getApellidos() + '\'' +
-               ", correo='" + getCorreo() + '\'' +
-               ", móvil='" + getMovil() + '\'' +
-               ", fechaNacimiento=" + getFecNacemento() +
+               "dni='" + this.getDni() + '\'' +
+               ", nombre='" + this.getNombre() + '\'' +
+               ", apellidos='" + this.getApellidos() + '\'' +
+               ", correo='" + this.getCorreo() + '\'' +
+               ", móvil='" + this.getMovil() + '\'' +
+               ", fechaNacimiento=" + this.getFecNacemento() +
                '}';
     }
     
