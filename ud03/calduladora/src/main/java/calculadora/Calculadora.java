@@ -16,7 +16,7 @@ public class Calculadora {
     
     public double dividir(int a, int b) {
         if (b == 0) {
-            throw new ArithmeticException("No se puede dividir por cero");
+            throw new ArithmeticException("No se puede dividir entre cero");
         }
         return (double) a / b;
     }
