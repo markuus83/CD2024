@@ -7,7 +7,7 @@ public class Modulo {
     private String nombre;
     private String  descripcion;
     private Integer horas;
-    private Integer sesiones = 0;
+    private Integer sesiones;
 
     /**
      * Constructor de la clase Modulo, donde pasamos com parámetros todos los atributos de la propia clase
@@ -82,12 +82,19 @@ public class Modulo {
                 "}";
     }
 
-    public Integer sesionesAp(Integer sesiones){
-        return sesiones++;
+    public void sesionesAp(int n) {
+        if (n > 0) {
+            this.sesiones += n;
+        }
     }
 
-    public Integer sesionesPD(Integer sesiones){
-        return sesiones++;
+    public void sesionesPD(int n) {
+        if (n > 0 && this.sesiones >= n) {
+            this.sesiones -= n;
+        }
     }
+    
+
 
 }
+
