@@ -13,12 +13,6 @@ class Persona {
     private Integer movil;
     private Date fecNacemento;
 
-    /**
-     * Constructor vacío da clase Persona
-     */
-    public Persona(){
-
-    }
 
     /**
      * Constructor da clase persona, donde pasamos todos ls atributos de dicha clase como parámetros

@@ -1,7 +1,10 @@
 package marcos;
 
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.provider.CsvSources;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -83,7 +86,8 @@ public class ModuloTest {
                 "}", modulo.toString());
     }
 
-    @Test
+    @ParameterizedTest
+    @CsvSource({"1","-1","0"})
     public void testSesionesAp(){
         Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
 
@@ -91,7 +95,8 @@ public class ModuloTest {
         assertEquals(2, modulo.getSesiones());
     }
 
-    @Test
+    @ParameterizedTest
+    @CsvSource({"1","-1","0"})
     public void testSesionesPD() {
         Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
 
