@@ -1,14 +1,19 @@
 package marcos;
 
 public class Nivel {
+    
+    //Atributos
     private String nivel;
 
-    public Nivel() {
+    /**
+     * Constructor da clase Nivel onde recibe como parámetros todos os atributos da clase nivel
+     * 
+     * @param nivel -> Nivel
+     */
+    public Nivel(String nivel) {
+        this.setNivel(nivel);
     }
 
-    public Nivel(String nivel) {
-        this.nivel = nivel;
-    }
 
     public String getNivel() {
         return nivel;
@@ -18,9 +23,13 @@ public class Nivel {
         this.nivel = nivel;
     }
 
+    /**
+     * Método especial toString
+     */
     @Override
     public String toString() {
-        return "Nivel [nivel=" + nivel + "]";
+        return "Nivel {" +
+                "nivel='" + this.getNivel() + '\'' +
+                "}";
     }
-
 }

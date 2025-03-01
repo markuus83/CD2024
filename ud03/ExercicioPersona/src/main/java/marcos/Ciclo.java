@@ -1,22 +1,30 @@
 package marcos;
 
 public class Ciclo {
+    
+    //Atributos
     private String codigo;
     private String nombre;
     private Nivel nivel;
     private Centro centro;
 
-    public Ciclo(){
-
-    }
-
+    /**
+     * Constructor da clase Ciclo que recibe como parámetros todos os atributos da clase Ciclo
+     * 
+     * @param codigo -> Código do Ciclo
+     * @param nombre -> Nome do Ciclo
+     * @param nivel -> Obxecto Nivel ao que fai referencia o Ciclo
+     * @param centro -> Obxecto Centro ao que fai referencia o Ciclo
+     */
     public Ciclo(String codigo, String nombre, Nivel nivel, Centro centro) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.nivel = nivel;
-        this.centro = centro;
+        this.setCodigo(codigo);
+        this.setNombre(nombre);
+        this.setNivel(nivel);
+        this.setCentro(centro);
     }
 
+
+    //Getters&Setters
     public String getCodigo() {
         return codigo;
     }
@@ -49,8 +57,17 @@ public class Ciclo {
         this.centro = centro;
     }
 
+    /**
+     * Método especial toString
+     */
     @Override
     public String toString() {
-        return "Ciclo [codigo=" + codigo + ", nombre=" + nombre + ", nivel=" + nivel + ", centro=" + centro + "]";
+        return "Ciclo {" +
+                "codigo='" + this.getCodigo() + '\'' +
+                ", nombre='" + this.getNombre() + '\'' +
+                ", nivel='" + this.getNivel() + '\'' +
+                ", centro='" + this.getCentro() + '\'' +
+                "}";
     }
+    
 }

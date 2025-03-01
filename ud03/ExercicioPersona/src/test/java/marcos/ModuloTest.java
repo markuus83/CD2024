@@ -2,115 +2,110 @@ package marcos;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 public class ModuloTest {
-    
+
+    @Test
+    public void testConstructor() {
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        assertEquals("1", modulo.getCodigo());
+        assertEquals("Modulo1", modulo.getNombre());
+        assertEquals("Descripcion1", modulo.getDescripcion());
+        assertEquals(1, modulo.getHoras());
+        assertEquals(1, modulo.getSesiones());
+    }
+
     @Test
     public void testSetCodigo() {
-        Modulo modulo = new Modulo();
-        modulo.setCodigo("M01");
-        assertEquals("M01", modulo.getCodigo());
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        modulo.setCodigo("2");
+
+        assertEquals("2", modulo.getCodigo());
     }
 
     @Test
     public void testSetNombre() {
-        Modulo modulo = new Modulo();
-        modulo.setNombre("Programación");
-        assertEquals("Programación", modulo.getNombre());
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        modulo.setNombre("Modulo2");
+
+        assertEquals("Modulo2", modulo.getNombre());
     }
 
     @Test
     public void testSetDescripcion() {
-        Modulo modulo = new Modulo();
-        modulo.setDescripcion("Aprender a programar");
-        assertEquals("Aprender a programar", modulo.getDescripcion());
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        modulo.setDescripcion("Descripcion2");
+
+        assertEquals("Descripcion2", modulo.getDescripcion());
     }
-    
+
     @Test
     public void testSetHoras() {
-        Modulo modulo = new Modulo();
-        modulo.setHoras(100);
-        assertEquals(100, modulo.getHoras());
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        modulo.setHoras(2);
+
+        assertEquals(2, modulo.getHoras());
     }
 
     @Test
     public void testSetSesiones() {
-        Modulo modulo = new Modulo();
-        modulo.setSesiones(50);
-        assertEquals(50, modulo.getSesiones());
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        modulo.setSesiones(2);
+
+        assertEquals(2, modulo.getSesiones());
     }
 
     @Test
     public void testToString() {
-        Modulo modulo = new Modulo();
-        modulo.setCodigo("M01");
-        modulo.setNombre("Programación");
-        modulo.setDescripcion("Aprender a programar");
-        modulo.setHoras(100);
-        modulo.setSesiones(50);
-        assertEquals("Modulo [codigo=M01, nombre=Programación, descripcion=Aprender a programar, horas=100, sesiones=50]", modulo.toString());
+
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+
+        assertEquals("Modulo {"
+                + "codigo='" + modulo.getCodigo() + '\''
+                + ", nombre='" + modulo.getNombre() + '\''
+                + ", descripcion='" + modulo.getDescripcion() + '\''
+                + ", horas='" + modulo.getHoras() + '\''
+                + ", sesiones='" + modulo.getSesiones() + '\''
+                + "}", modulo.toString());
     }
 
-    @Test
-    public void testConstructor() {
-        Modulo modulo = new Modulo("M01", "Programación", "Aprender a programar", 100, 50);
-        assertEquals("M01", modulo.getCodigo());
-        assertEquals("Programación", modulo.getNombre());
-        assertEquals("Aprender a programar", modulo.getDescripcion());
-        assertEquals(100, modulo.getHoras());
-        assertEquals(50, modulo.getSesiones());
+    @ParameterizedTest
+    @CsvSource({
+        "1, 2", 
+        "-1, 1",
+        "0, 1" 
+    })
+    public void testSesionesAp(int input, int expected) {
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+        modulo.sesionesAp(input);
+        assertEquals(expected, modulo.getSesiones());
     }
 
-    @Test
-    public void testConstructorVacio1() {
-        Modulo modulo = new Modulo();
-        assertEquals(null, modulo.getCodigo());
-        assertEquals(null, modulo.getNombre());
-        assertEquals(null, modulo.getDescripcion());
-        assertEquals(null, modulo.getHoras());
-        assertEquals(null, modulo.getSesiones());
-    }
 
-    @Test
-    public void testSetCodigoVacio() {
-        Modulo modulo = new Modulo();
-        modulo.setCodigo(null);
-        assertEquals(null, modulo.getCodigo());
+    @ParameterizedTest
+    @CsvSource({
+        "1, 0",
+        "-1, 1",
+        "0, 1",
+        "2, 1"
+    })
+    public void testSesionesPD(int input, int expected) {
+        Modulo modulo = new Modulo("1", "Modulo1", "Descripcion1", 1, 1);
+        modulo.sesionesPD(input);
+        assertEquals(expected, modulo.getSesiones());
     }
-
-    @Test
-    public void testSetNombreVacio() {
-        Modulo modulo = new Modulo();
-        modulo.setNombre(null);
-        assertEquals(null, modulo.getNombre());
-    }
-
-    @Test
-    public void testSetDescripcionVacio() {
-        Modulo modulo = new Modulo();
-        modulo.setDescripcion(null);
-        assertEquals(null, modulo.getDescripcion());
-    }
-
-    @Test
-    public void testSetHorasVacio() {
-        Modulo modulo = new Modulo();
-        modulo.setHoras(null);
-        assertEquals(null, modulo.getHoras());
-    }
-
-    @Test
-    public void testSetSesionesVacio() {
-        Modulo modulo = new Modulo();
-        modulo.setSesiones(null);
-        assertEquals(null, modulo.getSesiones());
-    }
-
-    @Test
-    public void testToStringVacio() {
-        Modulo modulo = new Modulo();
-        assertEquals("Modulo [codigo=null, nombre=null, descripcion=null, horas=null, sesiones=null]", modulo.toString());
-    }
-
 }
-

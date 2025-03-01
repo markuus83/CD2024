@@ -1,87 +1,103 @@
 package marcos;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import java.time.LocalDate;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Date;
 
 public class PersonaTest {
-
+    
     @Test
-    public void testPersona() {
-        Persona persona = new Persona();
-        assertTrue(persona instanceof Persona);
+    public void testConstructorAndGetters(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        assertEquals("Marcos", persona.getNombre());
+        assertEquals("Chouza", persona.getApe1());
+        assertEquals("Cruces", persona.getApe2());
+        assertEquals("Chouza Cruces", persona.getApellidos());
+        assertEquals("a23marcoss@iessanclemente.net", persona.getCorreo());
+        assertEquals(666666666, persona.getMovil());
+        assertEquals(new Date(19/9/2004), persona.getFecNacemento());
     }
 
     @Test
-    public void testSetDni() {
-        Persona persona = new Persona();
-        persona.setDni("12345678A");
-        assertEquals("12345678A", persona.getDni());
+    public void testSetNombre(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        persona.setNombre("Nombre_1");
+
+        assertEquals("Nombre_1", persona.getNombre());
+
     }
 
     @Test
-    public void testSetNombre() {
-        Persona persona = new Persona();
-        persona.setNombre("Juan");
-        assertEquals("Juan", persona.getNombre());
+    public void testSetApe1(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        persona.setApe1("Apellido_1");
+
+        assertEquals("Apellido_1", persona.getApe1());
+
     }
 
     @Test
-    public void testSetApellido1() {
-        Persona persona = new Persona();
-        persona.setApellido1("García");
-        assertEquals("García", persona.getApellido1());
+    public void testSetApe2(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        persona.setApe2("Apellido_2");
+
+        assertEquals("Apellido_2", persona.getApe2());
+
     }
 
     @Test
-    public void testSetApellido2() {
-        Persona persona = new Persona();
-        persona.setApellido2("Pérez");
-        assertEquals("Pérez", persona.getApellido2());
+    public void testSetCorreo(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        persona.setCorreo("Correo_1");
+
+        assertEquals("Correo_1", persona.getCorreo());
+
     }
 
     @Test
-    public void testSetCorreo() {
-        Persona persona = new Persona();
-        persona.setCorreo("miau");
-        assertEquals("miau", persona.getCorreo());
+    public void testSetMovil(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        persona.setMovil(111111111);
+
+        assertEquals(111111111, persona.getMovil());
+
     }
 
     @Test
-    public void testSetMovil() {
-        Persona persona = new Persona();
-        persona.setMovil(666555444);
-        assertEquals(666555444, persona.getMovil());
+    public void testSetFecNacemento(){
+
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
+
+        persona.setFecNacemento(new Date(1/1/2025));
+
+        assertEquals(new Date(1/1/2025), persona.getFecNacemento());
+
     }
 
     @Test
-    public void testSetFecNacimiento() {
-        Persona persona = new Persona();
-        persona.setFecNacimiento(LocalDate.of(1990, 1, 1));
-        assertEquals(LocalDate.of(1990, 1, 1), persona.getFecNacimiento());
-    }
+    public void testToString(){
 
-    @Test
-    public void testSetIban() {
-        Persona persona = new Persona();
-        persona.setIban("ES1234567890");
-        assertEquals("ES1234567890", persona.getIban());
-    }
+        Persona persona = new Persona("12345678A", "Marcos", "Chouza", "Cruces", "a23marcoss@iessanclemente.net", 666666666, new Date(19/9/2004));
 
-    @Test
-    public void testToString() {
-        Persona persona = new Persona();
-        persona.setDni("12345678A");
-        persona.setNombre("Juan");
-        persona.setApellido1("García");
-        persona.setApellido2("Pérez");
-        persona.setCorreo("miau");
-        persona.setMovil(666555444);
-        persona.setFecNacimiento(LocalDate.of(1990, 1, 1));
-        persona.setIban("ES1234567890");
-        assertEquals(
-                "Persona [dni=12345678A, nombre=Juan, apellido1=García, apellido2=Pérez, correo=miau, movil=666555444, fecNacimiento=1990-01-01, iban=ES1234567890]",
-                persona.toString());
+        assertEquals("Persona {" +
+               "dni='" + persona.getDni() + '\'' +
+               ", nombre='" + persona.getNombre() + '\'' +
+               ", apellidos='" + persona.getApellidos() + '\'' +
+               ", correo='" + persona.getCorreo() + '\'' +
+               ", móvil='" + persona.getMovil() + '\'' +
+               ", fechaNacimiento=" + persona.getFecNacemento() +
+               '}', persona.toString());
     }
 }

@@ -1,23 +1,32 @@
 package marcos;
 
 public class Modulo {
+    
+    //Atributos
     private String codigo;
     private String nombre;
-    private String descripcion;
+    private String  descripcion;
     private Integer horas;
     private Integer sesiones;
-    
-    public Modulo() {
-    }
 
+    /**
+     * Constructor de la clase Modulo, donde pasamos com parámetros todos los atributos de la propia clase
+     * 
+     * @param codigo -> Código del Modulo
+     * @param nombre -> Nombre del Modulo
+     * @param descripcion -> Descripcion del Modulo
+     * @param horas -> Numero de horas del Modulo
+     * @param sesiones -> Sesiones del Modulo
+     */
     public Modulo(String codigo, String nombre, String descripcion, Integer horas, Integer sesiones) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.horas = horas;
-        this.sesiones = sesiones;
+        this.setCodigo(codigo);
+        this.setNombre(nombre);
+        this.setDescripcion(descripcion);
+        this.setHoras(horas);
+        this.setSesiones(sesiones);
     }
 
+    //Getters&Setters
     public String getCodigo() {
         return codigo;
     }
@@ -58,17 +67,32 @@ public class Modulo {
         this.sesiones = sesiones;
     }
 
+    
+    /**
+     * Método especial toString
+     */
     @Override
     public String toString() {
-        return "Modulo [codigo=" + codigo + ", nombre=" + nombre + ", descripcion=" + descripcion + ", horas=" + horas
-                + ", sesiones=" + sesiones + "]";
+        return "Modulo {" +
+                "codigo='" + this.getCodigo() + '\'' +
+                ", nombre='" + this.getNombre() + '\'' +
+                ", descripcion='" + this.getDescripcion() + '\'' +
+                ", horas='" + this.getHoras() + '\'' +
+                ", sesiones='" + this.getSesiones() + '\'' +
+                "}";
     }
 
-    public Integer sesionesAP() {
-        return 0;
+    public void sesionesAp(int n) {
+        if (n > 0) {
+            this.sesiones += n;
+        }
     }
 
-    public Integer sesionesPD() {
-        return 0;
+    public void sesionesPD(int n) {
+        if (n > 0 && this.sesiones >= n) {
+            this.sesiones -= n;
+        }
     }
+
 }
+

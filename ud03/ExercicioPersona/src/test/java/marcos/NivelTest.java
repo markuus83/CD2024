@@ -1,63 +1,34 @@
 package marcos;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 public class NivelTest {
     
     @Test
-    public void testSetNivel() {
-        Nivel nivel = new Nivel();
-        nivel.setNivel("Básico");
-        assertEquals("Básico", nivel.getNivel());
-    }
-    
-    @Test
-    public void testToString() {
-        Nivel nivel = new Nivel();
-        nivel.setNivel("Básico");
-        assertEquals("Nivel [nivel=Básico]", nivel.toString());
+    public void testConstructorAndGetters() {
+
+        Nivel nivel = new Nivel("1");
+
+        assertEquals("1", nivel.getNivel());
     }
 
     @Test
-    public void testConstructor() {
-        Nivel nivel = new Nivel("Básico");
-        assertEquals("Básico", nivel.getNivel());
+    public void testSetNivel(){
+        
+        Nivel nivel = new Nivel("1");
+
+        nivel.setNivel("2");
+        assertEquals("2", nivel.getNivel());
     }
 
     @Test
-    public void testEquals() {
-        Nivel nivel1 = new Nivel("Básico");
-        Nivel nivel2 = new Nivel("Básico");
-        assertFalse(nivel1.equals(nivel2));
-    }
+    public void testToString(){
+        
+        Nivel nivel = new Nivel("1");
 
-    @Test
-    public void testNotEquals() {
-        Nivel nivel1 = new Nivel("Básico");
-        Nivel nivel2 = new Nivel("Avanzado");
-        assertFalse(nivel1.equals(nivel2));
-    }
-
-    @Test
-    public void testHashCode() {
-        Nivel nivel1 = new Nivel("Básico");
-        Nivel nivel2 = new Nivel("Básico");
-        assertFalse(nivel1.hashCode() == nivel2.hashCode());
-    }
-
-    @Test
-    public void testNotHashCode() {
-        Nivel nivel1 = new Nivel("Básico");
-        Nivel nivel2 = new Nivel("Avanzado");
-        assertFalse(nivel1.hashCode() == nivel2.hashCode());
-    }
-
-    @Test
-    public void testHashCodeEquals() {
-        Nivel nivel1 = new Nivel("Básico");
-        Nivel nivel2 = new Nivel("Básico");
-        assertFalse(nivel1.hashCode() == nivel2.hashCode());
+        assertEquals("Nivel {" +
+                    "nivel='" + nivel.getNivel() + '\'' +
+                    "}", nivel.toString());
     }
 }

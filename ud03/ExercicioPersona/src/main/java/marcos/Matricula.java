@@ -2,21 +2,28 @@ package marcos;
 
 public class Matricula {
     
+    //Atributos
     private Alumno alumno;
     private Modulo modulo;
     private Integer nota;
     private String curso;
-    
-    public Matricula() {
-    }
 
+    /**
+     * Constructor da clase Matricula onde recibe como parámetros todos os atributos da clase Matricula
+     * 
+     * @param alumno -> Obxecto alumno ao cal pertence a Matricula
+     * @param modulo -> Obxecto Modulo ao cal pertence a Matricula
+     * @param nota -> Nota da Matricula
+     * @param curso -> Curso ao que fai referencia a Matricula
+     */
     public Matricula(Alumno alumno, Modulo modulo, Integer nota, String curso) {
-        this.alumno = alumno;
-        this.modulo = modulo;
-        this.nota = nota;
-        this.curso = curso;
+        this.setAlumno(alumno);
+        this.setModulo(modulo);
+        this.setNota(nota);
+        this.setCurso(curso);
     }
 
+    //Getters&Setters
     public Alumno getAlumno() {
         return alumno;
     }
@@ -49,8 +56,18 @@ public class Matricula {
         this.curso = curso;
     }
 
+    /**
+     * Método especial toString
+     */
     @Override
     public String toString() {
-        return "Matricula [alumno=" + alumno + ", modulo=" + modulo + ", nota=" + nota + ", curso=" + curso + "]";
+        return "Matricula {" +
+                "alumno='" + this.getAlumno() + '\'' +
+                ", modulo='" + this.getModulo() + '\'' +
+                ", nota='" + this.getNota() + '\'' +
+                ", curso='" + this.getCurso() + '\'' +
+                "}";
     }
+
+    
 }

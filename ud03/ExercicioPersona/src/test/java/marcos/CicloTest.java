@@ -1,71 +1,78 @@
 package marcos;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class CicloTest {
 
-    private Ciclo ciclo;
-    private Nivel nivel;
-    private Centro centro;
+    @Test
+    public void testConstructorAndGetters(){
 
-    @BeforeEach
-    public void setUp() {
-        nivel = new Nivel("Superior");
-        centro = new Centro(1, "Centro de Pruebas", "Localidad", "Calle", "1", 12345);
-        ciclo = new Ciclo("C001", "Ciclo de Pruebas", nivel, centro);
+        Ciclo ciclo = new Ciclo("1", "Marcos", new Nivel("Nivel1"), new Centro(1, "San Clemente", "Santiago de Compostela", "Rúa San Clemente", "1", 15706));
+
+        assertEquals("1", ciclo.getCodigo());;
+        assertEquals("Marcos", ciclo.getNombre());
+        assertEquals("Nivel1", ciclo.getNivel().getNivel());
+        assertEquals(1, ciclo.getCentro().getCodigo());
+        assertEquals("San Clemente", ciclo.getCentro().getNombre());
+        assertEquals("Santiago de Compostela", ciclo.getCentro().getLocalidad());
+        assertEquals("Rúa San Clemente", ciclo.getCentro().getCalle());
+        assertEquals("1", ciclo.getCentro().getNumero());
+        assertEquals(15706, ciclo.getCentro().getCodigoPostal());
     }
 
     @Test
-    public void testGetCodigo() {
-        assertEquals("C001", ciclo.getCodigo());
+    public void testSetCodigo(){
+
+        Ciclo ciclo = new Ciclo("1", "Marcos", new Nivel("Nivel1"), new Centro(1, "San Clemente", "Santiago de Compostela", "Rúa San Clemente", "1", 15706));
+
+        ciclo.setCodigo("Nuevo_Codigo");
+        assertEquals("Nuevo_Codigo", ciclo.getCodigo());
     }
 
     @Test
-    public void testSetCodigo() {
-        ciclo.setCodigo("C002");
-        assertEquals("C002", ciclo.getCodigo());
+    public void testSetNombre(){
+
+        Ciclo ciclo = new Ciclo("1", "Marcos", new Nivel("Nivel1"), new Centro(1, "San Clemente", "Santiago de Compostela", "Rúa San Clemente", "1", 15706));
+
+        ciclo.setNombre("Nuevo_Nombre");
+        assertEquals("Nuevo_Nombre", ciclo.getNombre());
+    }
+
+
+    @Test
+    public void testSetNivel(){
+
+        Ciclo ciclo = new Ciclo("1", "Marcos", new Nivel("Nivel1"), new Centro(1, "San Clemente", "Santiago de Compostela", "Rúa San Clemente", "1", 15706));
+
+        ciclo.setNivel(new Nivel("Nuevo_Nivel"));
+        assertEquals("Nuevo_Nivel", ciclo.getNivel().getNivel());
     }
 
     @Test
-    public void testGetNombre() {
-        assertEquals("Ciclo de Pruebas", ciclo.getNombre());
-    }
+    public void testSetCentro(){
 
-    @Test
-    public void testSetNombre() {
-        ciclo.setNombre("Nuevo Ciclo");
-        assertEquals("Nuevo Ciclo", ciclo.getNombre());
-    }
+        Ciclo ciclo = new Ciclo("1", "Marcos", new Nivel("Nivel1"), new Centro(1, "San Clemente", "Santiago de Compostela", "Rúa San Clemente", "1", 15706));
 
-    @Test
-    public void testGetNivel() {
-        assertEquals(nivel, ciclo.getNivel());
+        ciclo.setCentro(new Centro(2, "Nuevo_Centro", "Nueva_Localidad", "Nueva_Calle", "2", 15707));
+        assertEquals(2, ciclo.getCentro().getCodigo());
+        assertEquals("Nuevo_Centro", ciclo.getCentro().getNombre());
+        assertEquals("Nueva_Localidad", ciclo.getCentro().getLocalidad());
+        assertEquals("Nueva_Calle", ciclo.getCentro().getCalle());
+        assertEquals("2", ciclo.getCentro().getNumero());
+        assertEquals(15707, ciclo.getCentro().getCodigoPostal());
     }
-
+    
     @Test
-    public void testSetNivel() {
-        Nivel nuevoNivel = new Nivel("Medio");
-        ciclo.setNivel(nuevoNivel);
-        assertEquals(nuevoNivel, ciclo.getNivel());
-    }
+    public void testToString(){
 
-    @Test
-    public void testGetCentro() {
-        assertEquals(centro, ciclo.getCentro());
-    }
+        Ciclo ciclo = new Ciclo("1", "Marcos", new Nivel("Nivel1"), new Centro(1, "San Clemente", "Santiago de Compostela", "Rúa San Clemente", "1", 15706));
 
-    @Test
-    public void testSetCentro() {
-        Centro nuevoCentro = new Centro(2, "Nuevo Centro", "Nueva Localidad", "Nueva Calle", "2", 54321);
-        ciclo.setCentro(nuevoCentro);
-        assertEquals(nuevoCentro, ciclo.getCentro());
-    }
-
-    @Test
-    public void testToString() {
-        String expected = "Ciclo [codigo=C001, nombre=Ciclo de Pruebas, nivel=Nivel [nivel=Superior], centro=Centro [codigo=1, nombre=Centro de Pruebas, localidad=Localidad, calle=Calle, numero=1, codigoPostal=12345]]";
-        assertEquals(expected, ciclo.toString());
+        assertEquals("Ciclo {" +
+                "codigo='" + ciclo.getCodigo() + '\'' +
+                ", nombre='" + ciclo.getNombre() + '\'' +
+                ", nivel='" + ciclo.getNivel() + '\'' +
+                ", centro='" + ciclo.getCentro() + '\'' +
+                "}", ciclo.toString());
     }
 }

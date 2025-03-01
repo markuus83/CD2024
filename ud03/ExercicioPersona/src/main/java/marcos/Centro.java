@@ -1,26 +1,36 @@
 package marcos;
 
 public class Centro {
-
+    
+    //Atributos
     private Integer codigo;
     private String nombre;
     private String localidad;
     private String calle;
     private String numero;
     private Integer codigoPostal;
-    
-    public Centro() {
-    }
 
+    /**
+     * Constructor da clase Centro no que recibe como parámetros todos os atributos da clase Centro
+     * 
+     * @param codigo -> Código do Centro
+     * @param nombre -> Nombre do Centro
+     * @param localidad -> Localidade do Centro
+     * @param calle -> Rúa do Centro
+     * @param numero -> Número do Centro
+     * @param codigoPostal -> Código postal do Centro
+     */
     public Centro(Integer codigo, String nombre, String localidad, String calle, String numero, Integer codigoPostal) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.localidad = localidad;
-        this.calle = calle;
-        this.numero = numero;
-        this.codigoPostal = codigoPostal;
+        this.setCodigo(codigo);
+        this.setNombre(nombre);
+        this.setLocalidad(localidad);
+        this.setCalle(calle);
+        this.setNumero(numero);
+        this.setCodigoPostal(codigoPostal);
     }
 
+
+    //Getters&Setters
     public Integer getCodigo() {
         return codigo;
     }
@@ -69,17 +79,25 @@ public class Centro {
         this.codigoPostal = codigoPostal;
     }
 
+    /**
+     * Método encargado de devolver a dirección completa do centro
+     * 
+     * @return Devolve unha cadea de texto ca dirección do centro
+     */
+    public String getDireccion(){
+        return this.localidad + ": " + this.calle + " - " + this.numero + " || " + this.codigoPostal;
+    }
+
+    /**
+     * Método especial toString
+     */
     @Override
     public String toString() {
-        return "Centro [codigo=" + codigo + ", nombre=" + nombre + ", localidad=" + localidad + ", calle=" + calle
-                + ", numero=" + numero + ", codigoPostal=" + codigoPostal + "]";
+        return "Centro {" +
+                "codigo='" + this.getCodigo() + '\'' +
+                ", nombre='" + this.getNombre() + '\'' +
+                ", direccion='" + this.getDireccion() + '\'' +
+                "}";
     }
 
-    public String getDireccion() {
-        return localidad + " " +
-                calle + " " +
-                numero + " " +
-                codigoPostal;
-
-    }
 }
