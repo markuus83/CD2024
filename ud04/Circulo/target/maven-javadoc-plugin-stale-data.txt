@@ -1,0 +1,49 @@
+@options
+@packages
+-classpath
+'/home/sanclemente.local/a23marcoscc/.m2/repository/junit/junit/4.11/junit-4.11.jar:/home/sanclemente.local/a23marcoscc/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar'
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Circulo 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'Circulo 1.0-SNAPSHOT API'
+Circulo
+/home/sanclemente.local/a23marcoscc/.m2/repository/junit/junit/4.11/junit-4.11.jar = 1352920880000
+/home/sanclemente.local/a23marcoscc/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar = 1341868082000
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/src/main/java = 1742976559553
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/allclasses-index.html = 1742979461044
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/link.svg = 1742979461060
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/type-search-index.js = 1742979461048
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/stylesheet.css = 1742979461060
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/index.html = 1742979461056
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/copy.svg = 1742979461060
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/element-list = 1742979461020
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/allpackages-index.html = 1742979461048
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/script.js = 1742979461060
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/help-doc.html = 1742979461060
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/search-page.js = 1742979461064
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/index-all.html = 1742979461056
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/module-search-index.js = 1742979461048
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/search.html = 1742979461056
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/tag-search-index.js = 1742979461048
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/member-search-index.js = 1742979461048
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/search.js = 1742979461060
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/overview-tree.html = 1742979461036
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Circulo/target/site/apidocs/package-search-index.js = 1742979461048
