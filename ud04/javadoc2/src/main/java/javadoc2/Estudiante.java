@@ -100,7 +100,7 @@ public class Estudiante {
     }
 
     /**
-     * Método encargado de imprimir a información dun estudante, semellante ao toString. Pero en vez de devolver, faino con prints.
+     * Método encargado de imprimir a información dun estudante, semellante ao toString. Pero en vez de devolver unha variable, faino con prints.
      */
     public void imprimirInformacion() {
         System.out.println("Nombre: " + nombre);

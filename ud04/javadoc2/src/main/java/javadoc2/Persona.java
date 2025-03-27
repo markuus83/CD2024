@@ -56,9 +56,7 @@ public class Persona {
     }
 
     /**
-     * Método encargado de mostrar por consola detalles por persoa.
-     * 
-     * Adicional: Non devolve nada, no propio método se atopan os prints
+     * Método encargado de imprimir a información dunha Persoa, semellante ao toString. Pero en vez de devolver unha variable, faino con prints.
      */
     public void imprimirDetalles() {
         System.out.println("Nombre: " + nombre);
