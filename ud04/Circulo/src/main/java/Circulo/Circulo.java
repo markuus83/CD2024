@@ -2,6 +2,9 @@ package Circulo;
 
 /**
  * Clase Circulo -> Clase encargada de xenerar novos obxectos Circulo
+ *
+ * @author a23marcoscc
+ * @version $Id: $Id
  */
 public class Circulo {
 
@@ -10,12 +13,13 @@ public class Circulo {
     private int y;
     private double radio;
 
+    
     /**
-     * Constructor de la clase Círculo donde recibe como parámetros todos los atributos de la clase
-     * 
-     * @param valorX -> Valor de la coordenada X
-     * @param valorY -> Valor de la coordenada Y
-     * @param valorRadio -> Longitud del radio del Círculo
+     * <p>Constructor for Circulo.</p>
+     *
+     * @param valorX a int
+     * @param valorY a int
+     * @param valorRadio a double
      */
     public Circulo(int valorX, int valorY, double valorRadio) {
         establecerX(valorX);
@@ -23,91 +27,99 @@ public class Circulo {
         establecerRadio(valorRadio);
     }
 
+    
     /**
-     * Método encargado de establecer el valor de X
-     * 
-     * @param valorX -> Valor de X
+     * <p>establecerX.</p>
+     *
+     * @param valorX a int
      */
     public void establecerX(int valorX) {
         x=valorX;
     }
 
+    
     /**
-     * Método encargado de devolver el valor de X
-     * 
-     * @return -> Int con el valor de X
+     * <p>obtenerX.</p>
+     *
+     * @return a int
      */
     public int obtenerX() {
         return x;
     }
 
+    
     /**
-     * Método encargado de establecer el valor de Y
-     * 
-     * @param valorY -> Valor de Y
+     * <p>establecerY.</p>
+     *
+     * @param valorY a int
      */
     public void establecerY(int valorY) {
         y=valorY;
     }
 
+    
     /**
-     * Método encargado de devolver el valor de Y
-     * 
-     * @return -> Int con el valor de Y
+     * <p>obtenerY.</p>
+     *
+     * @return a int
      */
     public int obtenerY() {
         return y;
     }
 
+    
     /**
-     * Método encargado de establecer el radio del círculo
-     * 
-     * @param valorRadio -> Valor del radio
+     * <p>establecerRadio.</p>
+     *
+     * @param valorRadio a double
      */
     public void establecerRadio(double valorRadio) {
 
         radio=(valorRadio < 0.0 ? 0.0 : valorRadio);
     }
 
+    
     /**
-     * Método encargado de devolver el valor del radio
-     * 
-     * @return -> Double con la longitud del radio
+     * <p>obtenerRadio.</p>
+     *
+     * @return a double
      */
     public double obtenerRadio() {
         return radio;
     }
 
+    
     /**
-     * Método encargado de devolver el valor del diámetro
-     * 
-     * @return -> Double con la longitud del radio
+     * <p>obtenerDiametro.</p>
+     *
+     * @return a double
      */
     public double obtenerDiametro() {
         return radio * 2;
     }
 
+    
     /**
-     * Método encargado de devolver la longitud del diámetro del círculo
-     * 
-     * @return -> Double con la longitud del diámetro
+     * <p>obtenerCircunferencia.</p>
+     *
+     * @return a double
      */
     public double obtenerCircunferencia() {
         return Math.PI * obtenerDiametro();
     }
 
+    
     /**
-     * Método encargado de obtener el área del círculo
-     * 
-     * @return -> Double con el área del círculo
+     * <p>obtenerArea.</p>
+     *
+     * @return a double
      */
     public double obtenerArea() {
         return Math.PI * radio * radio;
     }
     
-    /**
-     * Método encargado de devolver una cadena de texto con los atributos propios de la clase
-     */
+    
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         return "Centro = [" + x + "," + y + "]; Radio = " + radio;

@@ -4,12 +4,15 @@ import java.text.DecimalFormat;
 
 /**
  * Clase Main -> Clase principal do proxecto
+ *
+ * @author a23marcoscc
+ * @version $Id: $Id
  */
 public class Main {
 
     /**
      * Método main onde vai o corpo principal do proxecto
-     * 
+     *
      * @param args -> array de args
      */
     public static void main(String[] args) {
