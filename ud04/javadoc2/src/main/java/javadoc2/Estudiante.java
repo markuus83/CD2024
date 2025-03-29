@@ -1,5 +1,8 @@
 package javadoc2;
 
+/**
+ * Estudiante -> Clase encargada de xenerar novos obxectos Estudiante
+ */
 public class Estudiante {
 
     private String nombre;
