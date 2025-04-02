@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: javadoc2.CirculoTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in javadoc2.CirculoTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s -- in javadoc2.CirculoTest
