@@ -1,7 +1,7 @@
 package javadoc2;
 
 /**
- * Persona -> Clase para probar a documentación de javadoc
+ * Persona -> Clase encargada de xenerar novos obxectos Persona
  */
 public class Persona {
 
@@ -58,8 +58,7 @@ public class Persona {
     /**
      * Método encargado de imprimir a información dunha Persoa, semellante ao toString. Pero en vez de devolver unha variable, faino con prints.
      */
-    public void imprimirDetalles() {
-        System.out.println("Nombre: " + nombre);
-        System.out.println("Edad: " + edad);
+    public String imprimirDetalles() {
+        return "Nombre: " + this.getNombre() + "\nEdad: " + this.getEdad();
     }
 }

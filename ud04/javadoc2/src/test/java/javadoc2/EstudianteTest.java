@@ -15,6 +15,7 @@ public class EstudianteTest {
         assertEquals(0.0, estudiante.getCalificacion());
     }
 
+    
     @Test
     public void testSetters(){
 
@@ -29,15 +30,19 @@ public class EstudianteTest {
         assertEquals(10.0, estudiante.getCalificacion());
     }
 
+
     @Test
     public void testAprobo(){
 
         Estudiante estudiante = new Estudiante("Marcos", 20);
 
         estudiante.setCalificacion(10.0);
-
         assertEquals(true, estudiante.aprobo());
+
+        estudiante.setCalificacion(3);
+        assertEquals(false, estudiante.aprobo());
     }
+
 
     @Test
     public void testEdadEscolar(){
@@ -47,6 +52,7 @@ public class EstudianteTest {
         assertEquals(1, estudiante.edadEscolar());
     }
 
+
     @Test
     public void testEsUniversitario(){
 
@@ -54,5 +60,22 @@ public class EstudianteTest {
 
         assertEquals(true, estudiante.esUniversitario());
 
+        estudiante.setEdad(17);
+        assertEquals(false, estudiante.esUniversitario());
+    }
+
+
+    @Test
+    public void testImprimirInformacion(){
+
+        Estudiante estudiante = new Estudiante("Marcos", 20);
+
+        estudiante.setCalificacion(10);
+
+        assertEquals("Nombre: "+estudiante.getNombre()+
+                    "\nEdad: "+estudiante.getEdad()+
+                    "\nCalificación: "+estudiante.getCalificacion(), estudiante.imprimirInformacion());
+
     }
 }
+

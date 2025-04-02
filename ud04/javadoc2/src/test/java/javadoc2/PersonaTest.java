@@ -26,16 +26,12 @@ public class PersonaTest {
         assertEquals(100, persona.getEdad());
     }
 
-    /**
-     * 
-        @Test
-        public void testImprimirDetalles(){
+    @Test
+    public void testImprimirDetalles(){
 
-            Persona persona = new Persona("Marcos", 20);
+        Persona persona = new Persona("Marcos", 20);
 
-        String salidaEsperada = (String) persona.imprimirDetalles();
-
-        String salidaActual = "Nombre: Marcos\nEdad: 20";
-        }
-    */
+        assertEquals("Nombre: "+persona.getNombre()+
+                    "\nEdad: "+persona.getEdad(), persona.imprimirDetalles());
+    }
 }
