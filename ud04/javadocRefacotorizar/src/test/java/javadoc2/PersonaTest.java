@@ -1,0 +1,39 @@
+package javadoc2;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class PersonaTest {
+
+    private int veinte = 20;
+    private int cien = 100;
+    @Test
+    public void testConstrucorAndGetters() {
+
+        Persona persona = new Persona("Marcos", veinte);
+
+        assertEquals("Marcos", persona.getNombre());
+        assertEquals(veinte, persona.getEdad());
+    }
+
+    @Test
+    public void testSetters() {
+
+        Persona persona = new Persona("Marcos", veinte);
+
+        persona.setNombre("Nombre1");
+        persona.setEdad(cien);
+
+        assertEquals("Nombre1", persona.getNombre());
+        assertEquals(cien, persona.getEdad());
+    }
+
+    @Test
+    public void testImprimirDetalles() {
+
+        Persona persona = new Persona("Marcos", veinte);
+
+        assertEquals("Nombre: " + persona.getNombre() + "\nEdad: " + persona.getEdad(), persona.imprimirDetalles());
+    }
+}
