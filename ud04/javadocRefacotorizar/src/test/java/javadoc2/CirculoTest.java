@@ -1,20 +1,19 @@
 package javadoc2;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
 
 public class CirculoTest {
 
-    private double cero = 0.0;
-    private int menosUno = -1;
-    private int uno = 1;
-    private int dos = 1;
-    private int tres = 1;
-    private int seis = 6;
-    private int diez = 10;
-    private int veinte = 20;
-    private int treinta = 30;
+    private  double cero;
+    private final int menosUno = -1;
+    private final int uno = 1;
+    private final int dos = 1;
+    private final int tres = 1;
+    private final int seis = 6;
+    private final int diez = 10;
+    private final int veinte = 20;
+    private final int treinta = 30;
 
     @Test
     public void testConstructorAndGetters() {

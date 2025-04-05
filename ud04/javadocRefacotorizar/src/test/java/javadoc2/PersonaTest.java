@@ -1,13 +1,13 @@
 package javadoc2;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class PersonaTest {
 
-    private int veinte = 20;
-    private int cien = 100;
+    private final int veinte = 20;
+    private final int cien = 100;
+
     @Test
     public void testConstrucorAndGetters() {
 

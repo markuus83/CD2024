@@ -1,18 +1,17 @@
 package javadoc2;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class EstudianteTest {
 
-    private double cero = 0.0;
-    private int uno = 1;
-    private int tres = 3;
-    private int diecisiete= 17;
-    private int veinte = 20;
-    private int cien = 100; 
-    private double diez = 10.0;
+    private double cero;
+    private final int uno = 1;
+    private final int tres = 3;
+    private final int diecisiete = 17;
+    private final int veinte = 20;
+    private final int cien = 100; 
+    private final double diez = 10.0;
 
     @Test
     public void testConstructorAndGetters() {

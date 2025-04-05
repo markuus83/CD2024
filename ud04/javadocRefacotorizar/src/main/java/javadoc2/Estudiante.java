@@ -9,6 +9,10 @@ public class Estudiante {
     private int edad;
     private double calificacion;
 
+    private final double calificacionMinima = 5.0;
+    private final int doce = 12;
+    private final int mayorEdad = 18;
+
     /**.
      * Constructor propio da clase Estuiante, onde recibe como parámetros todos os atributos da propia clase.
      *
@@ -81,7 +85,6 @@ public class Estudiante {
      * @return -> Boolean dependendo de se a calificación é menor a 5 ou non
      */
     public boolean aprobo() {
-        double calificacionMinima = 5.0;
         return calificacion >= calificacionMinima;
     }
 
@@ -91,7 +94,6 @@ public class Estudiante {
      * @return -> Int ca idade escolar
      */
     public int edadEscolar() {
-        int doce = 12;
         return edad / doce;
     }
 
@@ -101,13 +103,12 @@ public class Estudiante {
      * @return -> Boolean dependendo de se a idade é menor a 18 ou non
      */
     public boolean esUniversitario() {
-        int mayorEdad = 18;
-
         return edad >= mayorEdad;
     }
 
     /**.
-     * Método encargado de imprimir a información dun estudante, semellante ao toString. Pero en vez de devolver unha variable, faino con prints.
+     * Método encargado de imprimir a información dun estudante, semellante ao toString. 
+     * Pero en vez de devolver unha variable, faino con prints.
      */
     public String imprimirInformacion() {
         return "Nombre: " + this.getNombre() + "\nEdad: " + this.getEdad() + "\nCalificación: "
