@@ -1,9 +1,9 @@
-#Wed Apr 09 09:24:32 CEST 2025
-/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/main/java/javadoc/Circulo.java=1744183337603
-/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/main/java/javadoc/Estudiante.java=1744183469899
+#Wed Apr 09 09:32:28 CEST 2025
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/main/java/javadoc/Circulo.java=1744183570559
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/main/java/javadoc/Estudiante.java=1744183594059
 /home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/main/java/javadoc/Persona.java=1744183215459
 /home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/test/java/javadoc/CirculoTest.java=1744183427267
 /home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/test/java/javadoc/EstudianteTest.java=1744183453911
 /home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/javadocRefacotorizar/src/test/java/javadoc/PersonaTest.java=1744183421683
 configuration*?=CD8E6D9FD73B5572FE4437845D66A0BECB44C991
-module-resource*?\:checkstyle/suppressions.xml=97E98769830250D94019E3B05FBC0AEA5A7EB9D6
+module-resource*?\:checkstyle/suppressions.xml=9577B284D6807EF73093670BC5808A2383213A0D
