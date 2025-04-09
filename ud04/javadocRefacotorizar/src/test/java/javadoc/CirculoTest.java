@@ -1,8 +1,12 @@
-package javadoc2;
+package javadoc;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Clase apara tests unitarios Circulo.
+ */
 public class CirculoTest {
 
     private  double cero;

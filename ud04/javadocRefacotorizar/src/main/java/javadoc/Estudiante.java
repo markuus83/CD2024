@@ -1,7 +1,7 @@
-package javadoc2;
+package javadoc;
 
 /**.
- * Estudiante -> Clase encargada de xenerar novos obxectos Estudiante
+ * Estudiante -> Clase encargada de xenerar novos obxectos Estudiante.
  */
 public class Estudiante {
 
@@ -10,7 +10,7 @@ public class Estudiante {
     private double calificacion;
 
     private final double calificacionMinima = 5.0;
-    private final int doce = 12;
+    private final int edadEscolar = 12;
     private final int mayorEdad = 18;
 
     /**.
@@ -94,7 +94,7 @@ public class Estudiante {
      * @return -> Int ca idade escolar
      */
     public int edadEscolar() {
-        return edad / doce;
+        return edad / edadEscolar;
     }
 
     /**.
@@ -107,7 +107,7 @@ public class Estudiante {
     }
 
     /**.
-     * Método encargado de imprimir a información dun estudante, semellante ao toString. 
+     * Método encargado de imprimir a información dun estudante,semellante ao toString.
      * Pero en vez de devolver unha variable, faino con prints.
      */
     public String imprimirInformacion() {

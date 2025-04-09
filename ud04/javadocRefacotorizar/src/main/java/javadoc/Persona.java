@@ -1,7 +1,7 @@
-package javadoc2;
+package javadoc;
 
 /**.
- * Persona -> Clase encargada de xenerar novos obxectos Persona
+ * Persona -> Clase encargada de xenerar novos obxectos Persona.
  */
 public class Persona {
 
@@ -56,7 +56,7 @@ public class Persona {
     }
 
     /**.
-     * Método encargado de imprimir a información dunha Persoa, semellante ao toString. 
+     * Método encargado de imprimir a información dunha Persoa, semellante ao toString.
      * Pero en vez de devolver unha variable, faino con prints.
      */
     public String imprimirDetalles() {

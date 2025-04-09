@@ -1,8 +1,12 @@
-package javadoc2;
+package javadoc;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Clase para test unitarios Estudiante.
+ */
 public class EstudianteTest {
 
     private double cero;
@@ -10,7 +14,7 @@ public class EstudianteTest {
     private final int tres = 3;
     private final int diecisiete = 17;
     private final int veinte = 20;
-    private final int cien = 100; 
+    private final int cien = 100;
     private final double diez = 10.0;
 
     @Test

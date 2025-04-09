@@ -1,4 +1,4 @@
-package javadoc2;
+package javadoc;
 
 /**.
  * Clase Circulo -> Clase encargada de xenerar novos obxectos Circulo.
@@ -9,8 +9,8 @@ public final class Circulo {
     private int y;
     private double radio;
 
-    private final int multiplicar = 2;
-    private final double valorTotal = 0.0;
+    private final int diametro = 2;
+    private final double valorMinimoRadio = 0.0;
 
     /**.
      * Constructor de la clase Círculo donde recibe como parámetros todos los atributos de la clase.
@@ -67,7 +67,7 @@ public final class Circulo {
      * @param valorRadio -> Valor del radio.
      */
     public void establecerRadio(double valorRadio) {
-        radio = valorRadio < valorTotal ? valorTotal : valorRadio;
+        radio = valorRadio < valorMinimoRadio ? valorMinimoRadio : valorRadio;
     }
 
     /**.
@@ -85,7 +85,7 @@ public final class Circulo {
      * @return -> Double con la longitud del radio.
      */
     public double obtenerDiametro() {
-        return radio * multiplicar;
+        return radio * diametro;
     }
 
     /**.
