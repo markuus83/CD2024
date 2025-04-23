@@ -1,3 +1,5 @@
-#Fri Apr 11 21:48:35 CEST 2025
-configuration*?=2F0593B177F425C8DFC541004B15414D16E1C60A
-module-resource*?\:checkstyle/suppressions.xml=7210662C616CBF06B962F46CED877754AA4A42BC
+#Wed Apr 23 10:03:36 CEST 2025
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Refactorizar2/src/main/java/refactorejercicio/Fecha.java=1745394400282
+/home/sanclemente.local/a23marcoscc/Escritorio/CD2024/ud04/Refactorizar2/src/test/java/refactorejercicio/FechaTest.java=1745394540359
+configuration*?=84B2AFB26883A3CA41360EE3F089B0B6CC07D5F6
+module-resource*?\:checkstyle/suppressions.xml=187D978AFFFC6A0DC2342D947B8D1183E3A07A9C

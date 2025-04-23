@@ -1,11 +1,12 @@
-package com.refactorizar2;
+package refactorejercicio;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import org.junit.jupiter.api.Test;
 
 /**
- * Clase FechaTest.
+ * Clase FechaTest que contiene pruebas para la clase Fecha.
  */
 public class FechaTest {
 
@@ -22,23 +23,23 @@ public class FechaTest {
     private final Fecha diaMalFebreroBisiesto1 = new Fecha(29, 2, 2007);
     private final Fecha diaMalFebreroBisiesto2 = new Fecha(29, 2, 1900);
 
+    /**
+     * Prueba para validar las fechas.
+     */
     @Test
     public void testValida() {
-        assertTrue(fechaCorrecta.valida());
-        assertFalse(mesMal1.valida());
-        assertFalse(mesMal2.valida());
-        assertFalse(diaMal1.valida());
-        assertFalse(diaMal2.valida());
-        assertFalse(diaMalNoviembre.valida());
-        assertTrue(diaBienDiciembre.valida());
-        assertFalse(diaMalFebrero.valida());
-        assertTrue(diaBienFebreroBisiesto1.valida());
-        assertTrue(diaBienFebreroBisiesto2.valida());
-        assertFalse(diaMalFebreroBisiesto1.valida());
-        assertFalse(diaMalFebreroBisiesto2.valida());
-    }
 
-    public Fecha getDiaMalNoviembre() {
-        return diaMalNoviembre;
+        assertTrue(fechaCorrecta.esValida());
+        assertFalse(mesMal1.esValida());
+        assertFalse(mesMal2.esValida());
+        assertFalse(diaMal1.esValida());
+        assertFalse(diaMal2.esValida());
+        assertFalse(diaMalNoviembre.esValida());
+        assertTrue(diaBienDiciembre.esValida());
+        assertFalse(diaMalFebrero.esValida());
+        assertTrue(diaBienFebreroBisiesto1.esValida());
+        assertTrue(diaBienFebreroBisiesto2.esValida());
+        assertFalse(diaMalFebreroBisiesto1.esValida());
+        assertFalse(diaMalFebreroBisiesto2.esValida());
     }
 }
