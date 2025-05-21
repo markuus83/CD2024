@@ -1,0 +1,39 @@
+· SINGLETON:
+
+   - Garantiza que una clase tenga una única instancia y proporciona un punto global de acceso a ella.
+
+
+
+· FACTORY METHOD:
+
+   - Se utiliza para crear objetos sin especificar la clase exacta del objeto que se creará. Se utiliza una clase de fábrica que se encarga de la creación de objetos.
+
+
+· OBSERVER:
+
+   - Permite a los objetos observar y ser notificados de cambios en otro objeto.
+
+
+· ADAPTER:
+
+   - Se utiliza para permitr que dos interfaces incompatibles trabajen juntas.
+
+
+· DECORATOR:
+
+   - Se utiliza para agrefar funcionalidad a un objeto existente de forma dinámica.
+
+
+· MVC (Model-View-Controller):
+
+    - Separa la interfaz del usuario, la lógica de negocio y los datos en tres componentes separados.
+
+
+· FACADE: 
+
+   - Proporciona una interfaz simplificada a un conjunto complejo de clases.
+
+
+· ITERATOR:
+
+   - Se utiliza para proporcionar un mecanismo para acceder a los elementos de una colección de objetos de forma secuencial sin exponer la estructura interna de la colección.

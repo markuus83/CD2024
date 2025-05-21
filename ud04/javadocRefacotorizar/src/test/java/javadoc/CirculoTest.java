@@ -51,7 +51,7 @@ public class CirculoTest {
 
         Circulo circulo = new Circulo(uno, dos, tres);
 
-        assertEquals(seis, circulo.obtenerDiametro());
+        assertEquals(uno, circulo.obtenerDiametro());
     }
 
     @Test

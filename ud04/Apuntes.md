@@ -74,3 +74,42 @@ Si cambia la funcionalidad del código, puede afectar a la compatibilidad con ot
 ```Shell
 Puede requerir pruebas adicionales para asegurarse de que el código sigue funcionando correctamente después.
 ```
+
+
+# 2. Patrones de Diseño
+
+### · Introducción
+
+#### a) ¿Qué es?
+```Shell
+Es una solución reutilizable a un problema común que se presenta en el diseño y desarrollo de software.
+
+Se describen en términos generales y abstractos, lo que significa que no están diseñados para un lenguaje en específico. Son soluciones con diseños más generales y abstractos que se pueden aplicar a una amplia gama de situaciones.
+```
+
+### · Objetivos
+
+#### a) Proporcionar solucione sprobadas y eficaces a problemas comunes
+```Shell
+Son soluciones probadas y que han demostrado su eficacia en situaciones similares.
+```
+
+#### b) Mejorar la calidad del software
+```Shell
+Promueven prácticas de diseño y desarrollo de software eficaces, lo que mejor la calidad.
+```
+
+#### c) Facilitar la comunicación entre los desarrolladores
+```Shell
+Proporcionan un lenguaje común y una terminología consistente para los desarrolladores.
+```
+
+#### d) Promover la reutilización de código
+```Shell
+Dan soluciones reutilizables a problemas comunes, lo que ahorra tiempo y recursos.
+```
+
+#### e) Proporcionar un marco para la evolución del software
+```Shell
+Pueden proporcionar un marco para la evolución del software.
+```
