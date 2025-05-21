@@ -1,0 +1,45 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'javadoc2 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'javadoc2 1.0-SNAPSHOT API'
+javadoc2
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/src/main/java = 1747837379263
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/link.svg = 1747839973701
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/module-search-index.js = 1747839973645
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/member-search-index.js = 1747839973646
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/package-search-index.js = 1747839973645
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/search.js = 1747839973704
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/stylesheet.css = 1747839973696
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/overview-tree.html = 1747839973607
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/search.html = 1747839973680
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/type-search-index.js = 1747839973645
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/allpackages-index.html = 1747839973644
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/allclasses-index.html = 1747839973635
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/search-page.js = 1747839973705
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/copy.svg = 1747839973700
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/tag-search-index.js = 1747839973647
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/script.js = 1747839973699
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/index.html = 1747839973685
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/index-all.html = 1747839973673
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/help-doc.html = 1747839973692
+/home/vagrant/Desktop/CD2024/ud04/Apuntes/javadoc2/javadoc2/target/site/apidocs/element-list = 1747839973537
